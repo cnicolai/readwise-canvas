@@ -6,7 +6,7 @@ def get_uuid():
         yield uuid.uuid4().hex[:16]
 
 
-def get_canvas(hightlights_and_notes, width=800, height=400, padding=20):
+def get_canvas(hightlights_and_notes, width, height, padding):
     nodes = [
         {
             "id": next(get_uuid()),
